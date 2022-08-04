@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+int first=1 ;
+int second=1 ;
+int i;
+
+printf("%d\n%d\n",first,second);
+
+for ( i = 0; i < 12; i++){
+    
+    int temp = second;
+    second += first;
+    first = temp;
+
+    printf("%d\n",second);
+}
+
+return 0;
+}
