@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+ float number[4];
+ float total;
+ int i;
+
+ for (i = 0; i < 4; i++)
+ {
+    printf(" enter number:");
+    scanf("%f",&number[i]);
+ }
+
+ for ( i = 0; i < 4 ; i++)
+ {
+    total += number[i];
+
+ }
+    
+    printf("average: %.2f ",total/4);
+    
+    
+ return 0;
+}
